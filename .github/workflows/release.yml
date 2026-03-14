@@ -70,10 +70,10 @@ jobs:
           cd go-gost
           
           # Build for linux/amd64
-          GOOS=linux GOARCH=amd64 go build -o ../gost-amd64 main.go
+          GOOS=linux GOARCH=amd64 go build -o ../gost-amd64 .
           
           # Build for linux/arm64
-          GOOS=linux GOARCH=arm64 go build -o ../gost-arm64 main.go
+          GOOS=linux GOARCH=arm64 go build -o ../gost-arm64 .
 
       - name: Update Latest Release
         uses: softprops/action-gh-release@v1
